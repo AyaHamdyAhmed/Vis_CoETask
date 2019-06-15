@@ -32,27 +32,26 @@ public class ExcelReader {
 	/**
 	 * to return data that we read from excel
 	 * **/
-	public static Object[][] getExcelData() throws IOException {
+	public static String[][] getExcelData() throws IOException {
 		fis = getFileInputStream();
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheetAt(0);
 		int totalRows = sheet.getLastRowNum();
 		int totalCols =1;
+		String[][] arrayExcelData = new String[totalCols][totalRows];
 
-		//System.out.println(totalRows);
-		String[][] arrayExcelData = new String[totalRows][totalCols];
 		for (int i = 0; i < totalCols; i++) {
 
 			for (int j = 0; j < totalRows; j++) {
 				XSSFRow row = sheet.getRow(j);
-				arrayExcelData[j][i] = row.getCell(i).toString();
-				System.out.println(arrayExcelData[j][i].toString());
+				arrayExcelData[0][j] = row.getCell(0).toString();
 			}
 		}
 
 		wb.close();
 		return arrayExcelData;
 	}
+
 
 	/*public static void main(String[] args) {
 		try {

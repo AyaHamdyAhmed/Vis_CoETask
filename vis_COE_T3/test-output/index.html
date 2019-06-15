@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">3 methods, 2 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,20 +102,29 @@
                     <div class="method-list-content failed suite-EshopTestSuite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch">userSearch</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)">userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch">userSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch">userSearch</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)">userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-EshopTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-EshopTestSuite" class="hide-methods skipped suite-EshopTestSuite"> (hide)</a> <!-- hide-methods skipped suite-EshopTestSuite -->
+                      <a href="#" panel-name="suite-EshopTestSuite" class="show-methods skipped suite-EshopTestSuite"> (show)</a> <!-- show-methods skipped suite-EshopTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-EshopTestSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EshopTestSuite" title="test.EshopHomeTest" hash-for-method="userSearch">userSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-EshopTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,57 +144,127 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userSearch">
-                  </a> <!-- userSearch -->
+                  <a name="userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)">
+                  </a> <!-- userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...) -->
                   <span class="method-name">userSearch</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: userSearch([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) https://www.vodafone.com.eg/eshop/homePage/index.jsp]
+                  <span class="parameters">(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Catalogue/Search-Results, 16.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #search\-q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AYAHAMDY&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:14725/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cc06c85a-2d33-4b47-9c51-76a5de8419c1
+*** Element info: {Using=id, value=search-q}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.EshopHomePage.searchQuery(EshopHomePage.java:30)
+	at test.EshopHomeTest.userSearch(EshopHomeTest.java:59)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="userSearch">
-                  </a> <!-- userSearch -->
+                  <a name="userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)">
+                  </a> <!-- userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...) -->
                   <span class="method-name">userSearch</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: userSearch([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) https://www.vodafone.com.eg/eshop/homePage/index.jsp]
+                  <span class="parameters">(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Catalogue/Search-Results, 16.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AYAHAMDY&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\iti\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:7635}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 50c683493369531e6692fb0d20161a86
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at pages.EshopHomePage.navigateToURL(EshopHomePage.java:23)
+	at test.EshopHomeTest.userSearch(EshopHomeTest.java:56)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="userSearch">
-                  </a> <!-- userSearch -->
-                  <span class="method-name">userSearch</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: userSearch([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) https://www.vodafone.com.eg/eshop/homePage/index.jsp]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-EshopTestSuite-class-failed -->
+          <div class="suite-EshopTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.EshopHomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userSearch">
+                  </a> <!-- userSearch -->
+                  <span class="method-name">userSearch</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: connection refused
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AYAHAMDY&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$379/1778717888.apply(Unknown Source)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.HandshakeResponse$$Lambda$358/77286441.apply(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake$$Lambda$359/537905623.apply(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at data.Browser.setBrowser(Browser.java:19)
+	at test.EshopHomeTest.beforeClass(EshopHomeTest.java:44)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EshopTestSuite-class-skipped -->
         </div> <!-- panel EshopTestSuite -->
         <div panel-name="test-xml-EshopTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -261,20 +340,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'userSearch')
 data.setCell(0, 2, 'test.EshopHomeTest')
-data.setCell(0, 3, 6407);
+data.setCell(0, 3, 300929);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'userSearch')
 data.setCell(1, 2, 'test.EshopHomeTest')
-data.setCell(1, 3, 75);
+data.setCell(1, 3, 203553);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'userSearch')
 data.setCell(2, 2, 'test.EshopHomeTest')
-data.setCell(2, 3, 48);
+data.setCell(2, 3, 0);
 window.suiteTableData['EshopTestSuite']= { tableData: data, tableDiv: 'times-div-EshopTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-EshopTestSuite">
               </div> <!-- times-div-EshopTestSuite -->
             </div> <!-- times-div -->
@@ -301,6 +380,10 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.EshopHomeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userSearch</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class before">
                 <img src="failed.png">
                 </img>
@@ -308,20 +391,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(Chrome)</span>
+                <span class="method-name">beforeClass(ie)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(ie)</span>
-                <span class="method-start">517 ms</span>
+                <span class="method-name">beforeClass(Chrome)</span>
+                <span class="method-start">503 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)</span>
+                <span class="method-start">53946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userSearch(https://www.vodafone.com.eg/eshop/homePage/index.jsp, iPhone, https://www.vodafone.com.eg/eshop/Cata...)</span>
+                <span class="method-start">53946 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterClass</span>
-                <span class="method-start">31748 ms</span>
+                <span class="method-start">257518 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">36046 ms</span>
+                <span class="method-start">354895 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [EshopTestSuite]" parallel="tests">
-  <test thread-count="3" name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="test.EshopHomeTest">
-        <methods>
-          <include name="userSearch"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- test.EshopHomeTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="3" name="IETest(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
-    <classes>
-      <class name="test.EshopHomeTest">
-        <methods>
-          <include name="userSearch"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- test.EshopHomeTest -->
-    </classes>
-  </test> <!-- IETest(failed) -->
   <test thread-count="3" name="FirefoxTest(failed)" parallel="tests">
     <parameter name="browser" value="Firefox"/>
     <classes>
@@ -37,4 +13,28 @@
       </class> <!-- test.EshopHomeTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="3" name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="test.EshopHomeTest">
+        <methods>
+          <include name="userSearch" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.EshopHomeTest -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test thread-count="3" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test.EshopHomeTest">
+        <methods>
+          <include name="userSearch" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.EshopHomeTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [EshopTestSuite] -->
